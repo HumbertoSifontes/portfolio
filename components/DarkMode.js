@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Image from 'next/image';
 
 const DarkMode = () => {
     useEffect(() => {
@@ -40,8 +41,8 @@ const DarkMode = () => {
                 defaultChecked={typeof window !== 'undefined' && window.localStorage && window.localStorage.getItem('selectedTheme') === 'dark'}
             />
             <label className='dark_mode_label' htmlFor='darkmode-toggle'>
-                <img src="/Sun.png" className="sun" alt="Sun"/>
-                <img src="/Moon.png" className="moon" alt="Moon"/>
+                <Image src="/Sun.png" className="sun" alt="Sun" width={24} height={24} /> {/* Cambia el width y height según necesites */}
+                <Image src="/Moon.png" className="moon" alt="Moon" width={24} height={24} /> {/* Cambia el width y height según necesites */}
             </label>
         </div>
     );
