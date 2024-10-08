@@ -89,7 +89,7 @@ const About = () => {
   };
 
   return (
-    <div className='h-full py-32 text-center xl:text-left'>
+    <div className='h-full text-center xl:text-left py-36'>
       <motion.div variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className="w-full h-full max-w-[750px] max-h-[600px] absolute bottom-0 -left-[150px] divAvatar avatarAbout">
         <div className='hidden xl:flex xl:max-w-none avatar translate-z-0'></div>
       </motion.div>

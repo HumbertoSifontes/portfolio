@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Home = () => {
   return (
-    <div className='h-full'>
+    <div className='h-full py-36'>
       <div className='w-full h-full'>
         <div className='text-center flex flex-col justify-center xl:pt-34 xl:text-left h-full container mx-auto'>
           <motion.h1 variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden' className='h1'>
