@@ -50,34 +50,30 @@
 }
 
 @layer base {
-  /* Estilo base para el cuerpo (body) */
   body {
-    font-size: 1rem; /* Tamaño de fuente accesible */
-    line-height: 1.6; /* Buena separación entre líneas */
-    overflow-x: hidden; /* Evitar scroll horizontal en todas las pantallas */
-    overflow-y: hidden; /* Evitar scroll en pantallas grandes */
+    font-size: 1rem; 
+    line-height: 1.6; 
+    overflow-x: hidden; 
+    overflow-y: hidden;
   }
 
-  /* Página principal ocupando todo el alto de la pantalla */
   .page {
     width: 100%;
     min-height: 100vh;
-    overflow-x: hidden; /* Evitar desbordamiento horizontal */
-    overflow-y: hidden; /* Sin scroll en pantallas grandes */
+    overflow-x: hidden; 
+    overflow-y: hidden; 
   }
 
-  /* Estilos responsivos para pantallas móviles */
   @media (max-width: 1023px) {
     body {
-      overflow-y: auto; /* Permitir scroll en móviles */
+      overflow-y: auto; 
     }
 
     .page {
-      overflow-y: auto; /* Permitir scroll en la página principal */
+      overflow-y: auto; 
     }
   }
 
-  /* Otros estilos ya definidos */
   .h1 {
     font-size: 2rem;
     line-height: 1.3;

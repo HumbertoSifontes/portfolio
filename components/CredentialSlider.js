@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
+import { EffectCube, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import 'swiper/css';
+import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
-import { RxArrowTopRight } from 'react-icons/rx';
 
 const credentialSlides = {
   slides: [
@@ -45,25 +45,26 @@ const CredentialSlider = () => {
     return (
         <div>
             <Swiper
-                spaceBetween={10}
+                effect={'cube'}
+                grabCursor={true}
+                cubeEffect={{
+                  shadow: true,
+                  slideShadows: true,
+                  shadowOffset: 20,
+                  shadowScale: 0.94,
+                }}
                 pagination={{
                 clickable: true,
                 }}
-                modules={{ Pagination }}
-                className='h-[280px] sm:h-[480px]'
+                modules={ [EffectCube, Pagination] }
+                className='h-[280px] sm:h-[280px]'
             >
                 {credentialSlides.slides.map((slide, index) => {
-                const isLastImage = index === credentialSlides.slides.length - 1;
                 return (
                     <SwiperSlide key={index}>
                     <div className='relative rounded-lg overflow-hidden flex items-center justify-center group' onClick={() => openModal(slide.path)}>
                         <div className='h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer transition-all duration-300 card-container'>
                         <Image src={slide.path} width={500} height={300} alt='certificado' />
-                        {!isLastImage && (
-                            <div className='text-3xl'>
-                            <RxArrowTopRight className='group-hover:rotate-45 arrow transition-all' />
-                            </div>
-                        )}
                         </div>
                     </div>
                     </SwiperSlide>

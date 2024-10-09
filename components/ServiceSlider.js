@@ -1,5 +1,5 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {FreeMode, Pagination} from 'swiper';
+import {FreeMode, Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
@@ -7,7 +7,6 @@ import {
   RxPencil2,
   RxDesktop,
   RxRocket,
-  RxArrowTopRight,
 } from "react-icons/rx";
 import { TbApi, TbBrandOauth, TbDatabase } from "react-icons/tb";
 
@@ -64,11 +63,10 @@ const serviceData = [
         pagination={{
           clickable: true,
         }}
-        modules={{FreeMode, Pagination}}
+        modules={[FreeMode, Pagination]}
         className='h-[540px] sm:h-[380px]'
       >
         {serviceData.map((item, index) => {
-        const isLastImage = index === serviceData.length - 1;
         return (
           <SwiperSlide key={index}>
             <div className='card-container'>
@@ -78,12 +76,6 @@ const serviceData = [
                   <div className='mb-2 text-lg texto'>{item.title}</div>
                   <p className='max-w-[350px] leading-normal texto'>{item.description}</p>
                 </div>
-                {!isLastImage && (
-                  <div className='text-3xl'>
-                    <RxArrowTopRight className='absolute group-hover:rotate-45 arrow bottom-0 transition-all' />
-                  </div>
-                )}
-                {isLastImage && <div style={{ height: '29px' }} />}
               </div>
             </div>
             </SwiperSlide>

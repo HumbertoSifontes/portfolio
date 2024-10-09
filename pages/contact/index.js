@@ -5,7 +5,7 @@ import {fadeIn} from '../../variants'
 const Contact = () => {
   return (
     <div className='h-full'>
-      <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
+      <div className='container mx-auto text-center xl:text-left flex items-center justify-center h-full'>
         <div className='flex flex-col w-full max-w-[700px] bg-card rounded-lg p-8'>
           <motion.h2 variants={fadeIn('down', 0.5)} initial='hidden' animate='show' exit='hidden' className='h2 text-center mb-12'>
             Conectemos<span className='text-accent animate-pulse'>.</span>

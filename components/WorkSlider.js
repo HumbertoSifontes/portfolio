@@ -1,5 +1,5 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {Pagination} from 'swiper';
+import {Pagination} from 'swiper/modules';
 import Image from 'next/image'
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -58,12 +58,15 @@ const WorkSlider = () => {
       pagination={{
         clickable: true,
       }}
-      modules={{Pagination}}
+      modules={ [Pagination] }
       className='h-[280px] sm:h-[480px]'
     >
       {workSlides.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
+            <div className='col-span-2 text-center text-accent font-semibold'>
+              {slide.title}
+            </div>
             <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
               {slide.images.map((image, index) => {
                 return (
@@ -84,9 +87,6 @@ const WorkSlider = () => {
                 </Link>
                 )
               })}
-              <div className='col-span-2 text-center text-accent font-semibold'>
-                {slide.title}
-              </div>
             </div>
           </SwiperSlide>
           );
