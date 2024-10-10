@@ -24,7 +24,7 @@ const Services = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-full h-full max-w-[750px] max-h-[600px] absolute xs:-top-[310px] xs:-left-[260px] xs:rotate-90 xl:top-auto xl:left-auto xl:-bottom-[220px] xl:-left-[350px] divAvatar xl:rotate-0">
+      <div className="w-full h-full max-w-[750px] max-h-[600px] absolute xs:-top-[310px] xs:-left-[260px] xs:rotate-90 xl:top-auto xl:-bottom-[220px] xl:-left-[350px] divAvatar xl:rotate-0">
         <div className='xl:flex xl:max-w-none triangle translate-z-0 animate-pulse'></div>
       </div>
     </div>
