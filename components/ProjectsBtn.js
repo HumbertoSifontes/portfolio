@@ -18,7 +18,7 @@ const ProjectsBtn = () => {
         onClick={() => {
           activarEfecto();
         }}
-        type={"submit"}
+        type="button"
       >
         <span className='botonName'>Proyectos</span>
       </button>

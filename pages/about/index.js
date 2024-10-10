@@ -88,12 +88,12 @@ const About = () => {
   };
   
   return (
-      <div className= 'h-full py-32 text-center xl:text-left'>
+      <div className= 'h-full py-36 text-center xl:text-left'>
         <motion.div variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className="w-full h-full max-w-[750px] max-h-[600px] absolute bottom-0 -left-[150px] divAvatar avatarAbout">
           <div className='hidden xl:flex xl:max-w-none avatar translate-z-0'></div>
         </motion.div>
-        <div className="w-[250px] h-full max-w-[550px] max-h-[600px] absolute -bottom-[330px] -right-[5px] divAvatar rotate-45">
-          <div className='hidden xl:flex xl:max-w-none sign translate-z-0 animate-pulse'></div>
+        <div className="w-[250px] h-full max-w-[550px] max-h-[600px] absolute xs:-top-[170px] xs:-left-[260px] lg:-bottom-[330px] lg:-right-[5px] xl:top-auto xl:left-auto xl:-bottom-[330px] xl:-right-[5px] divAvatar rotate-45">
+          <div className='xl:flex xl:max-w-none sign translate-z-0 animate-pulse'></div>
         </div>
           <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
               <div className="flex-1 flex flex-col justify-center">
@@ -139,7 +139,8 @@ const About = () => {
                           return (
                               <div 
                                   key={itemIndex} 
-                                  className={`cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 texto ${index === itemIndex && 'text-accent animate-pulse after:w-[100%] after:bg-accent after:animate-pulse after:transition-all after:duration-300'}`}                  
+                                  className={`texto cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-[var(--letters)] after:absolute after:-bottom-1 after:left-0 
+                                    ${index === itemIndex ? 'text-accent after:w-[100%] active-title animate-pulse after:animate-pulse after:transition-all after:duration-300' : ''}`}                                                    
                                   onClick={() => handleItemClick(itemIndex)}
                               >
                                   {item.title}

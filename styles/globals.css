@@ -33,6 +33,10 @@
   --destello: url("/destello.png");
 }
 
+.active-title {
+  --letters: var(--colorStyle);
+}
+
 .translate-z-0 {
   transform: translateZ(0px);
 }
@@ -64,7 +68,7 @@
     overflow-y: hidden; 
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: 1199px) {
     body {
       overflow-y: auto; 
     }
@@ -332,10 +336,33 @@ body {
 }
 @media only screen and (min-width: 1200px) {
   .py-36{
+    margin-top: 5%;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
     width: 92%;
   }
   [data-theme='light'] .divAvatar{
     right: 25%;
+  }
+}
+@media only screen and (min-width: 1377px) and (max-width: 1435px) {
+  [data-theme='dark'] .divAvatar{
+    scale: 0.9;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1376px) {
+  [data-theme='dark'] .divAvatar{
+    scale: 0.8;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1310px) {
+  [data-theme='dark'] .divAvatar{
+    scale: 0.7;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1275px) {
+  .ancho-parrafo-about{
+    width: 30rem;
   }
 }
 @media only screen and (max-width: 1625px) {
@@ -352,13 +379,21 @@ body {
   .ReactModal__Content {
     width: 95%;
   }
+  .botones-centrados {
+    justify-content: center;
+  }
 }
 @media only screen and (min-width: 640px) and (max-width: 1199px) {
   .py-36{
-    margin-top: 5%;
+    margin-top: 1%;
+    padding-top: 1rem;
+    padding-bottom: 0rem
   }
   .ReactModal__Content {
     width: 90%;
+  }
+  .botones-centrados {
+    justify-content: center;
   }
 }
 .Modal {
@@ -384,6 +419,8 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 50;
 }
+
+.swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets
 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
@@ -394,8 +431,8 @@ body {
   margin: 0 4px;
   transition: opacity 0.3s ease;
 }
-
-.swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active, .swiper-pagination-horizontal.swiper-pagination-bullets
+.swiper-pagination-bullet-active  {
   opacity: 1;
 }
 .card-container {
@@ -474,4 +511,18 @@ body {
 }
 .dark_mode_input:checked + .moon {
   fill: #fff;
+}
+.espaciado-particles{
+  right: 5rem;
+}
+@media only screen and (max-width: 639px){
+  .espaciado-particles{
+    right: 0;
+  }
+  .altura-card-services {
+    height: 280px;
+  }
+}
+.altura-card-services {
+  height: 380px;
 }
