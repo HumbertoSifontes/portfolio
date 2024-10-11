@@ -8,6 +8,8 @@ import {
   FaReact,
   FaJava,
   FaBootstrap,
+  FaJenkins,
+  FaAws
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -15,9 +17,16 @@ import {
   SiDjango,
   SiTailwindcss,
   SiPython,
-  SiSqlite,
+  SiRedis,
+  SiGithubactions,
+  SiDocker,
+  SiOwasp,
+  SiGraphql,
+  SiKubernetes,
+  SiBurpsuite,
 } from "react-icons/si";
-import {TbBrandFramerMotion} from 'react-icons/tb'
+import { BiLogoPostgresql } from "react-icons/bi";
+import {TbBrandFramerMotion, TbBrandRedux} from 'react-icons/tb'
 import {BiLogoSpringBoot} from 'react-icons/bi'
 import CountUp from 'react-countup'
 import CredentialSlider from "../../components/CredentialSlider";
@@ -37,23 +46,53 @@ const aboutData = [
           <span title="JavaScript" key="javascript"><FaJs style={{ color: '#e6e207', background: 'black' }} /></span>,
           <span title="React.js" key="react"><FaReact style={{ color: 'lightblue', background: 'white' }} /></span>,
           <span title="Next.js" key="next"><SiNextdotjs /></span>,
+          <span title="React-Redux" key="react-redux"><TbBrandRedux style={{ color: 'blueviolet' }} /></span>,
         ],
       },
       {
         title: 'Back-End',
         icons: [
-          <span title="Python" key="python"><SiPython style={{ color: '#061e97', background: 'white' }} /></span>,
+          <span title="Python" key="python"><SiPython style={{ color: '#061e97' }} /></span>,
           <span title="Django" key="django"><SiDjango style={{ color: '#069742' }} /></span>,
           <span title="Java" key="java"><FaJava style={{ color: 'red' }} /></span>,
           <span title="SpringBoot" key="springboot"><BiLogoSpringBoot style={{ color: '#069742' }} /></span>,
+          <span title="GraphQL" key="graphql"><SiGraphql style={{ color: '#cb42b6' }} /></span>
         ],
       },
       {
         title: 'DataBase',
         icons: [
           <span title="MySQL" key="mysql"><SiMysql style={{ color: '#061e97', background: 'white' }} /></span>,
-          <span title="SQLite" key="sqlite"><SiSqlite style={{ color: 'lightblue', background: 'white' }} /></span>,
+          <span title="PostgreSQL" key="postgresql"><BiLogoPostgresql style={{ color: '#3c4c8d' }} /></span>,
+          <span title="Redis" key="redis"><SiRedis style={{ color: 'orange' }} /></span>
         ],
+      },
+      {
+        title: 'CI/CD',
+        icons: [
+          <span title="GitHub-Actions" key="githubactions"><SiGithubactions style={{ color: '#3857d4' }} /></span>,
+          <span title="Jenkins" key="jenkins"><FaJenkins style={{ color: 'black', background: '#d43838' }} /></span>
+        ]
+      },
+      {
+        title: 'Contenedorizacion',
+        icons: [
+          <span title="Docker" key="docker"><SiDocker style={{ color: '#3857d4' }} /></span>,
+          <span title="Kubernetes" key="kubernetes"><SiKubernetes style={{ color: '#3c4c8d' }} /></span>
+        ]
+      },
+      {
+        title: 'Cloud Hosting',
+        icons: [
+          <span title="Amazon Web Services" key="aws"><FaAws style={{ color: 'black', background: 'orange' }} /></span>,
+        ]
+      },
+      {
+        title: 'Seguridad',
+        icons: [
+          <span title="OWASP Top10" key="owasp"><SiOwasp style={{ color: 'black', background: '#ece4e4' }} /></span>,
+          <span title="Burp Suite" key="burp suite"><SiBurpsuite style={{ color: '#d57f5a', background: 'black' }} /></span>
+        ]
       },
     ],
   },
@@ -88,7 +127,7 @@ const About = () => {
   };
   
   return (
-      <div className= 'h-full py-36 text-center xl:text-left'>
+      <div className= 'h-full pt-20 pb-28 text-center xl:text-left'>
         <motion.div variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className="w-full h-full max-w-[750px] max-h-[600px] absolute bottom-0 -left-[150px] divAvatar avatarAbout">
           <div className='hidden xl:flex xl:max-w-none avatar translate-z-0'></div>
         </motion.div>
@@ -102,13 +141,13 @@ const About = () => {
                 </motion.h2>
                 <motion.p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 texto" variants={fadeIn('right', 0.4)} initial='hidden' animate='show' exit='hidden'>
                   Como entusiasta de la tecnología, he adquirido una sólida formación en desarrollo web full stack, respaldada por estudios certificados y una constante búsqueda 
-                  de conocimiento autodidacta. Mi enfoque en la programación y el diseño me ha permitido fusionar la estética con la funcionalidad, creando productos digitales intuitivos y atractivos.
+                  de conocimiento autodidacta. Mi enfoque en el desarrollo de software y el diseño me ha permitido fusionar la estética con la funcionalidad y seguridad, creando productos digitales intuitivos, atractivos y seguros.
                 </motion.p>
                 <motion.div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8" variants={fadeIn('right', 0.6)} initial='hidden' animate='show' exit='hidden'>
                   <div className="flex flex-1 xl:gap-x-6">
                     <div className="flex-1 relative after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                       <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                        <CountUp start={0} end={12} duration={5}/> +
+                        <CountUp start={0} end={24} duration={5}/> +
                       </div>
                       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] texto">
                         Meses de Experiencia
@@ -119,7 +158,7 @@ const About = () => {
                         <CountUp start={0} end={7} duration={5}/> 
                       </div>
                       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] texto">
-                        Desarrollos
+                        Desarrollos Personales
                       </div>
                     </div>
                     <div className="flex-1 relative after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
@@ -148,7 +187,7 @@ const About = () => {
                           )
                       })}
                   </div>
-                  <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+                  <div className="py-2 xs:pb-36 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
                     {aboutData[index].info.map((item, itemIndex) => {
                       return (
                         <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center">

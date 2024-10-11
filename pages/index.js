@@ -6,20 +6,18 @@ import TalkingBtn from '@/components/TalkingBtn';
 
 const Home = () => {
   return (
-    <div className='h-full py-36'>
+    <div className='h-full py-8'>
       <div className='w-full h-full'>
         <div className='text-center flex flex-col justify-center xl:pt-34 xl:text-left h-full container mx-auto'>
-          <motion.h1 variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden' className='h1'>
-            Digitalizando <br /> Soluciones<span className='text-accent animate-pulse'>.</span>
-          </motion.h1>
           <motion.h3 variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden' className='h3'>
-            Desarrollador Web <span className='text-accent botonName animate-pulse'>Full Stack</span> | Diseñador
+            Desarrollador Web <span className='text-accent text-4xl leading-6 mb-8 font-bold fullstack animate-pulse'>Full Stack</span> | Diseñador
           </motion.h3>
           <motion.p variants={fadeIn('down', 0.3)} initial='hidden' animate='show' exit='hidden' className='ancho-parrafo-about max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-8 texto'>
             <br />
-            ¡Hola! Soy Humberto &apos;EfuntaDev&apos;, un apasionado desarrollador web full stack y diseñador con enfoque en la creación de experiencias digitales impactantes.
-            Busco sumergirme en entornos laborales desafiantes que me permitan aplicar mis habilidades y aprender de manera continua. Estoy ansioso por contribuir y crecer en el emocionante mundo de la tecnología.
-            ¡Estoy listo para sumergirme en nuevos desafíos! Siempre abierto a nuevas oportunidades, colaboraciones y proyectos.
+            <b>¡Hola! Soy Humberto, también conocido como 'EfuntaDev'.</b><br />
+            Soy un desarrollador web full stack y diseñador apasionado por crear soluciones digitales innovadoras y funcionales. Con experiencia en diversas tecnologías, disfruto trabajando en proyectos que combinan desarrollo y diseño para ofrecer experiencias de usuario sobresalientes.<br />
+            Estoy en búsqueda de nuevas oportunidades para contribuir en equipos dinámicos y enfrentar desafíos técnicos que me permitan seguir aprendiendo y creciendo profesionalmente. Si estás buscando a alguien comprometido, con enfoque en resultados y capacidad para adaptarse rápidamente a nuevas tecnologías, ¡estoy listo para colaborar!<br />
+            No dudes en contactarme para discutir proyectos, colaboraciones o futuras oportunidades.
           </motion.p>
           <motion.div variants={fadeIn('down', 0.4)} initial='hidden' animate='show' exit='hidden' className='flex items-center botones-centrados gap-x-6'>
             <ProjectsBtn />

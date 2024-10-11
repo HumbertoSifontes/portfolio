@@ -71,10 +71,10 @@ const serviceData = [
             <SwiperSlide key={index}>
               <div className='card-container h-full'>
                 <div className='bg-card rounded-lg px-6 py-8 flex flex-col gap-x-6 sm:gap-x-0 group transition-all duration-300'>
-                  <div className='flex justify-center text-4xl text-accent mb-4'>{item.icon}</div>
+                  <div className='flex justify-center text-4xl text-accent mb-4 animate-pulse'>{item.icon}</div>
                   <div className='mb-8'>
-                    <div className='mb-2 text-lg texto'>{item.title}</div>
-                    <p className='max-w-[350px] leading-normal texto'>{item.description}</p>
+                    <p className='mb-2 texto'>{item.title}</p><br/>
+                    <p className='texto texto-card-services'>{item.description}</p>
                   </div>
                 </div>
               </div>
