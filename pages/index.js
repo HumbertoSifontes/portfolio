@@ -14,7 +14,7 @@ const Home = () => {
           </motion.h3>
           <motion.p variants={fadeIn('down', 0.3)} initial='hidden' animate='show' exit='hidden' className='ancho-parrafo-about max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-8 texto'>
             <br />
-            <b>¡Hola! Soy Humberto, también conocido como 'EfuntaDev'.</b><br />
+            <b>¡Hola! Soy Humberto, también conocido como &apos;EfuntaDev&apos;.</b><br />
             Soy un desarrollador web full stack y diseñador apasionado por crear soluciones digitales innovadoras y funcionales. Con experiencia en diversas tecnologías, disfruto trabajando en proyectos que combinan desarrollo y diseño para ofrecer experiencias de usuario sobresalientes.<br />
             Estoy en búsqueda de nuevas oportunidades para contribuir en equipos dinámicos y enfrentar desafíos técnicos que me permitan seguir aprendiendo y creciendo profesionalmente. Si estás buscando a alguien comprometido, con enfoque en resultados y capacidad para adaptarse rápidamente a nuevas tecnologías, ¡estoy listo para colaborar!<br />
             No dudes en contactarme para discutir proyectos, colaboraciones o futuras oportunidades.
