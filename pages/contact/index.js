@@ -1,19 +1,30 @@
-import { BsArrowRight } from 'react-icons/bs';
+import { BsArrowRight } from 'react-icons/bs'; 
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 import emailjs from 'emailjs-com';
 import { Toaster, toast } from 'react-hot-toast';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
+  const [recaptchaToken, setRecaptchaToken] = React.useState(null);
+
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (!recaptchaToken) {
+      toast.error('Por favor completa el reCAPTCHA');
+      return;
+    }
 
     emailjs
       .sendForm(
         'service_22bdgmb',
         'template_2kuviqs',
         e.target,
-        'XFpkBCGwlHDJ6v58O'
+        'XFpkBCGwlHDJ6v58O',
+        {
+          'g-recaptcha-response': recaptchaToken,
+        }
       )
       .then(
         (result) => {
@@ -39,6 +50,10 @@ const Contact = () => {
       );
 
     e.target.reset();
+  };
+
+  const handleRecaptcha = (token) => {
+    setRecaptchaToken(token);
   };
 
   return (
@@ -100,6 +115,12 @@ const Contact = () => {
               name="message"
               required
             ></motion.textarea>
+
+            <ReCAPTCHA
+              sitekey="6LdUpF4qAAAAAAZHu3GmmpPmT3dNS0yBa62JlSC7"
+              onChange={handleRecaptcha}
+            />
+
             <motion.button
               variants={fadeIn('right', 0.2)}
               initial="hidden"
