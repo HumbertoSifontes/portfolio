@@ -9,7 +9,8 @@ import {
   FaJava,
   FaBootstrap,
   FaJenkins,
-  FaAws
+  FaAws,
+  FaCloudflare
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -91,7 +92,8 @@ const aboutData = [
         title: 'Seguridad',
         icons: [
           <span title="OWASP Top10" key="owasp"><SiOwasp style={{ color: 'black', background: '#ece4e4' }} /></span>,
-          <span title="Burp Suite" key="burp suite"><SiBurpsuite style={{ color: '#d57f5a', background: 'black' }} /></span>
+          <span title="Burp Suite" key="burp suite"><SiBurpsuite style={{ color: '#d57f5a', background: 'black' }} /></span>,
+          <span title="Cloudflare" key="cloudflare"><FaCloudflare style={{ color: 'orange', background: '#ece4e4' }} /></span>
         ]
       },
     ],

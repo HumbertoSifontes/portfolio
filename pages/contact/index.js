@@ -60,8 +60,8 @@ const Contact = () => {
   return (
     <div className="h-full py-10 pb-20">
       <Toaster />
-      <div className="container mx-auto text-center xl:text-left flex items-center justify-center h-full">
-        <div className="flex flex-col w-full max-w-[700px] bg-card rounded-lg p-8">
+      <div className="form-container-container text-center xl:text-left flex items-center justify-center h-full">
+        <div className="flex flex-col bg-card rounded-lg p-8">
           <motion.h2
             variants={fadeIn('down', 0.5)}
             initial="hidden"
@@ -117,10 +117,10 @@ const Contact = () => {
               required
             ></motion.textarea>
 
-            <ReCAPTCHA
-              sitekey="6LdUpF4qAAAAAAZHu3GmmpPmT3dNS0yBa62JlSC7"
-              onChange={handleRecaptcha}
-            />
+              <ReCAPTCHA
+                sitekey="6LdUpF4qAAAAAAZHu3GmmpPmT3dNS0yBa62JlSC7"
+                onChange={handleRecaptcha}
+              />
 
             <motion.button
               variants={fadeIn('right', 0.2)}
