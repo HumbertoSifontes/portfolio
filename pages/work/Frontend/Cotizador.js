@@ -28,25 +28,26 @@ const Cotizador = () => {
                     initial="hidden"
                     animate="show"
                     exit="hidden"
-                    className="w-full mx-auto xl:mx-0 mb-10 xl:mb-8 texto"></motion.div>
-                  <p className='texto'>
+                    className="w-full mx-auto xl:mx-0 mb-10 xl:mb-8 texto">
+                  <p className='texto sm-screen-text-left'>
                     Desarrollé el sitio web con{" "}
                     <span className="text-accent text-2xl leading-6 mb-8 font-bold fullstack animate-pulse">
                         React.js 
                     </span>
                     , resultando en una SPA (Single Page Application). 
                     Permite a los usuarios calcular el precio estimado de una póliza de seguro de hogar en función de diversos factores, como el tipo de propiedad, la ubicación y los metros cuadrados.
-                    <br />
-                    <br />
-                    <h3 className="text-lg font-medium leading-6 texto">Funcionalidades Destacadas</h3>
-                    <div className="mt-2 text-md">
-                      <ul className="list-disc list-inside">
-                        <li className="text-lg font-small font-light texto"><strong>Cálculo Preciso:</strong> Utiliza datos reales para calcular el precio de la póliza de seguro con precisión.</li>
-                        <li className="text-lg font-small font-light texto"><strong>Historial de Cotizaciones:</strong> Guarda y muestra un historial de cotizaciones realizadas por el usuario.</li>
-                        <li className="text-lg font-small font-light texto"><strong>Tema Oscuro:</strong> Ofrece una experiencia visual personalizable con la capacidad de alternar entre el tema oscuro y claro.</li>
-                      </ul>
-                  </div>
                   </p>
+                    <br />
+                    <br />
+                  <h3 className="text-lg font-medium leading-6 texto">Funcionalidades Destacadas</h3>
+                  <div className="mt-2 text-md sm-screen-text-left">
+                    <ul className="list-disc list-inside">
+                      <li className="text-lg font-small font-light texto"><strong>Cálculo Preciso:</strong> Utiliza datos reales para calcular el precio de la póliza de seguro con precisión.</li>
+                      <li className="text-lg font-small font-light texto"><strong>Historial de Cotizaciones:</strong> Guarda y muestra un historial de cotizaciones realizadas por el usuario.</li>
+                      <li className="text-lg font-small font-light texto"><strong>Tema Oscuro:</strong> Ofrece una experiencia visual personalizable con la capacidad de alternar entre el tema oscuro y claro.</li>
+                    </ul>
+                  </div>
+                </motion.div>
               </div>
             </div>
 

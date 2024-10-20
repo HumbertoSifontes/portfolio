@@ -10,7 +10,7 @@ const Work = () => {
           <motion.h2 variants={fadeIn('up', 0.2)} initial='hidden' animate='show' exit='hidden' className="h2 xl:mt-12">
             Proyectos<span className="text-accent animate-pulse">.</span>
           </motion.h2>
-          <motion.p variants={fadeIn('up', 0.4)} initial='hidden' animate='show' exit='hidden' className="mb-4 max-w-[400px] mx-auto texto">
+          <motion.p variants={fadeIn('up', 0.4)} initial='hidden' animate='show' exit='hidden' className="mb-4 max-w-[400px] mx-auto sm-screen-text-left texto">
           Aunque me considero en etapa trainee/junior, he canalizado mi creatividad y habilidades técnicas en proyectos personales, explorando 
           diferentes tecnologías y herramientas. Mi enfoque práctico me ha brindado una comprensión sólida de las bases del desarrollo y diseño web.
           </motion.p>

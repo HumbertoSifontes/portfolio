@@ -28,28 +28,30 @@ const TaskApp = () => {
                     initial="hidden"
                     animate="show"
                     exit="hidden"
-                    className="w-full mx-auto xl:mx-0 mb-10 xl:mb-8 texto"></motion.div>
-                <p className='texto'>
+                    className="w-full mx-auto xl:mx-0 mb-10 xl:mb-8 texto">
+                  <p className='texto sm-screen-text-left'>
                     Desarrollé el sitio web con{" "}
                     <span className="text-accent text-2xl leading-6 mb-8 font-bold fullstack animate-pulse">
                         React.js 
                     </span>
-                    ,Redux y React Router resultando en una SPA (Single Page Application). 
+                    , Redux y React Router resultando en una SPA (Single Page Application). 
                     Diseñada para gestionar tareas. La aplicación utiliza el almacenamiento local para la persistencia de datos, incluso después de refrescar la página, e incorpora bibliotecas adicionales para elementos decorativos en la interfaz de usuario.
-                  <br />
-                  <br />
+                    <br />
+                    <br />
+                  </p>
                   <h3 className="text-lg font-medium leading-6 texto">
                     Funcionalidades destacadas
                   </h3>
-                  <div className="mt-2 text-md">
-                      <ul className="list-disc list-inside">
-                        <li className="text-lg font-small font-light texto"><strong>Aplicación de Página Única (SPA): </strong > Este proyecto aprovecha React y React Router para crear una experiencia de página única continua, mejorando la navegación y la interacción del usuario.</li>
-                        <li className="text-lg font-small font-light texto"><strong>Gestión de Estado con Redux:</strong> Redux se utiliza para gestionar de manera eficiente el estado de la aplicación, permitiendo cambios de estado centralizados y predecibles.</li>
-                        <li className="text-lg font-small font-light texto"><strong>Datos Persistentes usando Almacenamiento Local:</strong> La aplicación emplea el almacenamiento local del navegador para guardar los datos de las tareas, asegurando que las tareas se conserven incluso si la página se refresca o el navegador se cierra.</li>
-                        <li className="text-lg font-small font-light texto"><strong>Elementos Decorativos en la Interfaz de Usuario:</strong> Se integraron bibliotecas especializadas para mejorar el atractivo visual de la aplicación, haciendo que la interfaz sea más atractiva y fácil de usar.</li>
-                      </ul>
-                    </div>
-                </p>
+                  <div className="mt-2 text-md sm-screen-text-left">
+                    <ul className="list-disc list-inside">
+                      <li className="text-lg font-small font-light texto"><strong>Aplicación de Página Única (SPA): </strong > Este proyecto aprovecha React y React Router para crear una experiencia de página única continua, mejorando la navegación y la interacción del usuario.</li>
+                      <li className="text-lg font-small font-light texto"><strong>Gestión de Estado con Redux:</strong> Redux se utiliza para gestionar de manera eficiente el estado de la aplicación, permitiendo cambios de estado centralizados y predecibles.</li>
+                      <li className="text-lg font-small font-light texto"><strong>Datos Persistentes usando Almacenamiento Local:</strong> La aplicación emplea el almacenamiento local del navegador para guardar los datos de las tareas, asegurando que las tareas se conserven incluso si la página se refresca o el navegador se cierra.</li>
+                      <li className="text-lg font-small font-light texto"><strong>Elementos Decorativos en la Interfaz de Usuario:</strong> Se integraron bibliotecas especializadas para mejorar el atractivo visual de la aplicación, haciendo que la interfaz sea más atractiva y fácil de usar.</li>
+                    </ul>
+                  </div>
+                  <br/><br/>
+                </motion.div>
               </div>
             </div>
 

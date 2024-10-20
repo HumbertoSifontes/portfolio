@@ -30,7 +30,7 @@ const Egbe = () => {
                     animate="show"
                     exit="hidden"
                     className="w-full mx-auto xl:mx-0 mb-10 xl:mb-8 texto">
-                  <p className='texto'>
+                  <p className='texto sm-screen-text-left'>
                     Desarrollé el sitio web con{" "}
                     <span className="text-accent text-2xl leading-6 mb-8 font-bold fullstack animate-pulse">
                       React.js

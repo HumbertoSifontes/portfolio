@@ -343,6 +343,11 @@ body {
     right: 25%;
   }
 }
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .container {
+    max-width: 500px!important;
+  }
+}
 @media only screen and (min-width: 1377px) and (max-width: 1435px) {
   [data-theme='dark'] .divAvatar{
     scale: 0.9;
@@ -406,16 +411,16 @@ body {
   z-index: 1000;
 }
 .Modales {
-  background-color: var(--modal) !important; /* Sobrescribe color de fondo */
-  min-width: 60%; /* Sobrescribe el ancho mínimo */
-  max-width: 65%; /* Sobrescribe el ancho máximo */
-  max-height: 65%; /* Ajusta la altura máxima */
+  background-color: var(--modal) !important;
+  min-width: 60%;
+  max-width: 65%;
+  max-height: 65%;
   height: fit-content;
   margin-top: 7rem;
-  padding: 20px !important; /* Sobrescribe padding de Tailwind */
-  overflow: auto !important; /* Evita que el contenido sea ocultado */
-  transform: none !important; /* Elimina transformaciones */
-  transition: none !important; /* Desactiva las transiciones */
+  padding: 20px !important;
+  overflow: auto !important;
+  transform: none !important;
+  transition: none !important;
 }
 
 .Overlay {
@@ -583,6 +588,9 @@ body {
     height: fit-content !important;
     margin-top: 21vh!important;
   }
+  .sm-screen-text-left {
+    text-align: left!important;
+  }
 }
 @media (max-width: 576px) {
   .form-container{
@@ -602,5 +610,8 @@ body {
   }
   .modal2-centered {
     align-items: center;
+  }
+  .sm-screen-text-left {
+    text-align: left!important;
   }
 }

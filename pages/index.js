@@ -12,7 +12,7 @@ const Home = () => {
           <motion.h3 variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden' className='h3'>
             Desarrollador Web <span className='text-accent text-4xl leading-6 mb-8 font-bold fullstack animate-pulse'>Full Stack</span> | Diseñador
           </motion.h3>
-          <motion.p variants={fadeIn('down', 0.3)} initial='hidden' animate='show' exit='hidden' className='ancho-parrafo-about max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-8 texto'>
+          <motion.p variants={fadeIn('down', 0.3)} initial='hidden' animate='show' exit='hidden' className='ancho-parrafo-about sm-screen-text-left max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-8 texto'>
             <br />
             <b>¡Hola! Soy Humberto, también conocido como &apos;EfuntaDev&apos;.</b><br />
             Soy un desarrollador web full stack y diseñador apasionado por crear soluciones digitales innovadoras y funcionales. Con experiencia en diversas tecnologías, disfruto trabajando en proyectos que combinan desarrollo y diseño para ofrecer experiencias de usuario sobresalientes.<br />
