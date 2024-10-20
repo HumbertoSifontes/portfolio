@@ -14,22 +14,22 @@ const workSlides = {
         {
           title: 'title',
           path: '/thumb42.png',
-          url: 'https://egbeiworiaweda.netlify.app/'
+          url: 'work/Frontend/Egbe'
         },
         {
           title: 'title',
           path: '/thumb12.png',
-          url: 'https://proyectofinalfrontendfiuba.netlify.app'
+          url: 'work/Frontend/TaskApp'
         },
         {
           title: 'title',
           path: '/thumb32.png',
-          url: 'https://cotizadorefuntadev.netlify.app'
+          url: 'work/Frontend/Cotizador'
         },
         {
           title: 'title',
           path: '/thumb22.png',
-          url: 'https://humbertosifontes.github.io/EcommerceJS/'
+          url: 'work/Frontend/Boutique'
         },
       ],
     },
@@ -70,15 +70,15 @@ const WorkSlider = () => {
             <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
               {slide.images.map((image, index) => {
                 return (
-                  <Link href={image.url} key={index} target="_blank" rel="noopener noreferrer">
+                  <Link href={image.url} key={index} rel="noopener noreferrer">
                   <div key={index} className='relative rounded-lg overflow-hidden flex items-center justify-center group'>
                     <div className='flex items-center justify-center relative overflow-hidden'>
                       <Image src={image.path} width={500} height={300} alt='work'/>
                       <div className='screen'></div>
                       <div className='absolute bottom-1 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
                         <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
-                          <div className='delay-100'>Ir</div>
-                          <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>al Proyecto</div>
+                          <div className='delay-100'>Ver</div>
+                          <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>descripción</div>
                           <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'><BsArrowRight/></div>
                         </div>
                       </div>
