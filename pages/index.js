@@ -12,7 +12,7 @@ const Home = () => {
           <motion.h3 variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden' className='h3'>
             Desarrollador Web <span className='text-accent text-4xl leading-6 mb-8 font-bold fullstack animate-pulse'>Full Stack</span> | Diseñador
           </motion.h3>
-          <motion.p variants={fadeIn('down', 0.3)} initial='hidden' animate='show' exit='hidden' className='ancho-parrafo-about sm-screen-text-left max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-8 texto'>
+          <motion.p variants={fadeIn('down', 0.3)} initial='hidden' animate='show' exit='hidden' className='ancho-parrafo-about max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-8 texto'>
             <br />
             <b>¡Hola! Soy Humberto, también conocido como &apos;EfuntaDev&apos;.</b><br />
             Soy un desarrollador web full stack y diseñador apasionado por crear soluciones digitales innovadoras y funcionales. Con experiencia en diversas tecnologías, disfruto trabajando en proyectos que combinan desarrollo y diseño para ofrecer experiencias de usuario sobresalientes.<br />
@@ -34,7 +34,7 @@ const Home = () => {
           <div className='hidden xl:flex xl:max-w-none avatar translate-z-0'></div>
         </motion.div>
       </div>
-      <div className='w-full h-[300px] max-w-[530px] max-h-[300px] absolute xs:-top-[150px] xs:-left-[270px] sm:-top-[150px] sm:-left-[270px] md:-top-[150px] md:-left-[270px] lg:-top-[150px] lg:-left-[270px] xl:top-auto xl:-bottom-[150px] xl:-left-[270px] animate-spin-slow'>
+      <div className='w-full h-[300px] max-w-[530px] max-h-[300px] absolute xs:bottom-auto xs:-top-[75px] xs:-left-[125px] sm:-top-[150px] sm:-left-[270px] md:-top-[150px] md:-left-[270px] lg:-top-[150px] lg:-left-[270px] xl:top-auto xl:-bottom-[150px] xl:-left-[270px] animate-spin-slow'>
         <div className='xl:flex xl:max-w-none destello translate-z-0'></div>
       </div>
 

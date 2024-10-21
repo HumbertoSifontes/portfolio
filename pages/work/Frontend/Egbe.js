@@ -30,7 +30,7 @@ const Egbe = () => {
                     animate="show"
                     exit="hidden"
                     className="w-full mx-auto xl:mx-0 mb-10 xl:mb-8 texto">
-                  <p className='texto sm-screen-text-left'>
+                  <p className='texto'>
                     Desarrollé el sitio web con{" "}
                     <span className="text-accent text-2xl leading-6 mb-8 font-bold fullstack animate-pulse">
                       React.js
@@ -83,8 +83,8 @@ const Egbe = () => {
               </Link>
             </motion.div>
           </div>
-          <div className="w-[250px] h-full max-w-[550px] max-h-[600px] absolute xs:-top-[170px] xs:-left-[260px] lg:-bottom-[330px] lg:-right-[5px] xl:top-auto xl:left-auto xl:-bottom-[330px] xl:-right-[5px] divAvatar rotate-45">
-            <div className="xl:flex xl:max-w-none sign translate-z-0 animate-pulse"></div>
+          <div className="w-full h-full max-w-[750px] max-h-[600px] absolute xs:-top-[310px] xs:-left-[260px] xs:rotate-90 xl:top-auto xl:-bottom-[220px] xl:-left-[350px] divAvatar xl:rotate-0">
+            <div className='xl:flex xl:max-w-none triangle translate-z-0 animate-pulse'></div>
           </div>
         </div>
       </div>

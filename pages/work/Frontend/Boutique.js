@@ -30,7 +30,7 @@ const Boutique = () => {
                     animate="show"
                     exit="hidden"
                     className="w-full mx-auto xl:mx-0 mb-10 xl:mb-8 texto">
-                <p className='texto sm-screen-text-left'>
+                <p className='texto'>
                     Desarrollé el sitio web con{" "}
                     <span className="text-accent text-2xl leading-6 mb-8 font-bold fullstack animate-pulse">
                         Vanilla JavaScript 
@@ -83,8 +83,8 @@ const Boutique = () => {
               </Link>
             </motion.div>
           </div>
-          <div className="w-[250px] h-full max-w-[550px] max-h-[600px] absolute xs:-top-[170px] xs:-left-[260px] lg:-bottom-[330px] lg:-right-[5px] xl:top-auto xl:left-auto xl:-bottom-[330px] xl:-right-[5px] divAvatar rotate-45">
-            <div className="xl:flex xl:max-w-none sign translate-z-0 animate-pulse"></div>
+          <div className='w-full h-[300px] max-w-[530px] max-h-[300px] absolute xs:bottom-auto xs:-top-[75px] xs:-left-[125px] sm:-top-[150px] sm:-left-[270px] md:-top-[150px] md:-left-[270px] lg:-top-[150px] lg:-left-[270px] xl:top-auto xl:-bottom-[150px] xl:-left-[270px] animate-spin-slow'>
+            <div className='xl:flex xl:max-w-none destello translate-z-0'></div>
           </div>
         </div>
       </div>

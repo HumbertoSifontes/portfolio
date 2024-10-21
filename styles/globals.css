@@ -614,4 +614,10 @@ body {
   .sm-screen-text-left {
     text-align: left!important;
   }
+  .animate-spin-slow {
+    height: 145px;
+    max-height: 145px;
+    width: 250px;
+    max-width: 250px;
+  }
 }
